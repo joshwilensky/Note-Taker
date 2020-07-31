@@ -13,28 +13,50 @@ app.use(express.json());
 
 // MIDDLEWARE ACTIVATION:
 app.get("/notes", function (req, res) {
-  res.sendFile(path.join(__dirname, "public", "notes.html"));
+  res.sendFile(path.join(mainDir, "notes.html"));
+});
+
+app.get("/api/notes", function (req, res) {
+  res.sendFile(path.join(__dirname, "/db/db.json"));
+});
+
+app.get("/api/notes/:id", function (req, res) {
+  let savedNotes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
+  res.json(savedNotes[Number(req.params.id)]);
 });
 
 app.get("*", function (req, res) {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
-});
-
-// GET API NOTES:
-app.get("/api/notes", function (req, res) {
-  fs.readFile("./db/db.json", function (err, data) {
-    var note = JSON.parse(data);
-    res.json(note);
-    console.log(note);
-  });
+  res.sendFile(path.join(mainDir, "index.html"));
 });
 
 // POST API NOTES:
-app.post("/api/:notes", function (req, res) {
-  fs.writeFile("./db/db.json", function (err, data) {
-    var note = JSON.parse(data);
-    res.json(note);
+app.post("/api/notes", function (req, res) {
+  let savedNotes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
+  let newNote = req.body;
+  let uniqueID = savedNotes.length.toString();
+  newNote.id = uniqueID;
+  savedNotes.push(newNote);
+  fs.writeFileSync("./db/db.json", JSON.stringify(savedNotes));
+  console.log("Note saved to db.json. Content: ", newNote);
+  res.json(savedNotes);
+});
+
+app.delete("/api/notes/:id", function (req, res) {
+  let savedNotes = JSON.parse(fs.readFileSync("./db/db.json", "utf8"));
+  let noteID = req.params.id;
+  let newID = 0;
+  console.log(`Deleting note with ID ${noteID}`);
+  savedNotes = savedNotes.filter((currNote) => {
+    return currNote.id != noteID;
   });
+
+  for (currNote of savedNotes) {
+    currNote.id = newID.toString();
+    newID++;
+  }
+
+  fs.writeFileSync("./db/db.json", JSON.stringify(savedNotes));
+  res.json(savedNotes);
 });
 
 // STARTS THE SERVER TO BEGIN LISTENING---------------
