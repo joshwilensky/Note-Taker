@@ -1,6 +1,6 @@
 ![image](https://user-images.githubusercontent.com/66797344/89087569-b67b2180-d362-11ea-8d98-bee7449934bf.png)
 
-![video](https://user-images.githubusercontent.com/66797344/89087819-9861f100-d363-11ea-97e5-200ff077309c.png)
+<iframe src="https://drive.google.com/file/d/19626_fXo2RGX_WApZvIIcWkL7pk3ps23/preview" width="640" height="480"></iframe>
 
 # The Note Taker[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ---
