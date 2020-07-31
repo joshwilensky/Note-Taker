@@ -1,5 +1,3 @@
-![image](https://user-images.githubusercontent.com/66797344/89087569-b67b2180-d362-11ea-8d98-bee7449934bf.png)
-
 # The Note Taker[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ---
 ## Table of Contents
@@ -17,7 +15,7 @@
 ### <a name="Description"></a>Description
 Create an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
 ### <a name="Screenshots"></a>Screenshots
-
+![image](https://user-images.githubusercontent.com/66797344/89087569-b67b2180-d362-11ea-8d98-bee7449934bf.png)
 ### <a name="Installation"></a>Installation
 express, path, PORT 8000, apiroutes, htmlroutes
 ### <a name="Usage"></a>Usage
