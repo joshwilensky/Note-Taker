@@ -29,6 +29,14 @@ app.get("/api/notes", function (req, res) {
   });
 });
 
+// POST API NOTES:
+app.post("/api/:notes", function (req, res) {
+  fs.writeFile("./db/db.json", function (err, data) {
+    var note = JSON.parse(data);
+    res.json(note);
+  });
+});
+
 // STARTS THE SERVER TO BEGIN LISTENING---------------
 app.listen(PORT, function () {
   console.log("App listening on PORT " + PORT);
