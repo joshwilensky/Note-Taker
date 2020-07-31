@@ -1,7 +1,5 @@
 ![image](https://user-images.githubusercontent.com/66797344/89087569-b67b2180-d362-11ea-8d98-bee7449934bf.png)
 
-<iframe src="https://drive.google.com/file/d/19626_fXo2RGX_WApZvIIcWkL7pk3ps23/preview" width="640" height="480"></iframe>
-
 # The Note Taker[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ---
 ## Table of Contents
