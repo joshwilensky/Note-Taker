@@ -1,4 +1,4 @@
-# The Note Taker[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# The Note Taker [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ---
 
@@ -38,15 +38,13 @@ Create an application that can be used to write, save, and delete notes. This ap
 
 - VS Code
 - NPM
-  -- express
-  -- init
-  -- install
+  - [x] express
+  - [x] init
+  - [x] install
 - Node.js
-
-  - Path
-  - Body Parser
-  - fs
-
+  - [x] Path
+  - [x] Body Parser
+  - [x] fs
 - Heroku
 
 ### <a name="Usage"></a>Usage
@@ -82,9 +80,8 @@ Joshua Wilensky
 
 ### <a name="Tests"></a>Tests
 
-- npm init
-- npm install
-- npm express
+- [x] npm init
+- [x] npm install
 
 ### <a name="Questions"></a>Questions
 
@@ -92,4 +89,4 @@ joshwilensky@gmail.com
 
 ### <a name="Github"></a>GitHub Account
 
-github.com/joshwilensky
+http://github.com/joshwilensky
