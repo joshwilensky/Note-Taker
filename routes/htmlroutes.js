@@ -1,3 +1,4 @@
+// DEPENDENCIES===================================
 const router = require('express').Router();
 const path = require('path')
 
@@ -6,12 +7,12 @@ router.get("/", (req, res) => {
 });
 
 router.get("/notes", (req, res) => {
-    res.sendFile(path.join(__dirname, "../../Develop/public/notes.html"));
+    res.sendFile(path.join(__dirname, "../Develop/public/notes.html"));
 });
 
-//My '404' response if index page not found
+// 404 ERROR MESSAGE===============================
 router.get("*", (req, res) => {
-    res.json("Page not found, SAVE FERRIS");
+    res.json("Page Not Found");
 });
 
 module.exports = router;

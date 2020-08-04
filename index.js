@@ -2,12 +2,11 @@ var inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
-const generateMarkdown = require("./generateMarkdown");
+const generateMarkdown = require("../README-Location/generateMarkdown");
 
 // An array of questions for the user
 function promptUser() {
-  return inquirer.prompt([
-    {
+  return inquirer.prompt([{
       type: "input",
       name: "name",
       message: "Please enter your name:",
@@ -30,8 +29,7 @@ function promptUser() {
     {
       type: "input",
       name: "screenshots",
-      message:
-        "Please enter any URLs for screenshots relevant to this project; or type <skip>. If you type <skip>, the screenshot portion of the document will not generate.",
+      message: "Please enter any URLs for screenshots relevant to this project; or type <skip>. If you type <skip>, the screenshot portion of the document will not generate.",
     },
     {
       type: "input",
@@ -46,8 +44,7 @@ function promptUser() {
     {
       type: "list",
       name: "license",
-      message:
-        "Which License would you like to use? If you choose not to include a license, that portion of the document will not generate.",
+      message: "Which License would you like to use? If you choose not to include a license, that portion of the document will not generate.",
       choices: ["MIT", "BSD", "Apache", "None"],
     },
     {
@@ -58,20 +55,17 @@ function promptUser() {
     {
       type: "input",
       name: "tests",
-      message:
-        "Please describe the tests you generated with the proper results:",
+      message: "Please describe the tests you generated with the proper results:",
     },
     {
       type: "input",
       name: "questions",
-      message:
-        "Please provide your email for questions related to the project:",
+      message: "Please provide your email for questions related to the project:",
     },
     {
       type: "input",
       name: "github",
-      message:
-        "Please enter your GitHub username and repo URL for this project:",
+      message: "Please enter your GitHub username and repo URL for this project:",
     },
   ]);
 }

@@ -26,7 +26,7 @@ router.delete("/api/notes/:id", (req, res) => {
     const noteId = dBase.find(note => note.id === parseInt(req.params.id));
     const index = dBase.indexOf(noteId);
     if (!noteId)
-        return res.status(404).send("D'oh! No Note for YOU!");
+        return res.status(404).send("Page Not Found");
     dBase.splice(index, 1);
     fs.writeFileSync("./Develop/db/db.json", JSON.stringify(dBase), "utf-8");
     return res.json(true);
