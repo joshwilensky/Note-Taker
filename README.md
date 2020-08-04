@@ -31,7 +31,7 @@
 Create an application that can be used to write, save, and delete notes. This application will use an express backend and save and retrieve note data from a JSON file.
 
 ### <a name="Screenshots"></a>Screenshots
-
+![image](https://user-images.githubusercontent.com/66797344/89087569-b67b2180-d362-11ea-8d98-bee7449934bf.png)
 ### <a name="Installation"></a>Installation
 
 - VS Code
@@ -85,7 +85,12 @@ Joshua Wilensky
 ### <a name="Questions"></a>Questions
 
 joshwilensky@gmail.com
+<<<<<<< HEAD
 
 ### <a name="Github"></a>GitHub Account
 
 github.com/joshwilensky
+=======
+### <a name="Github"></a>Github
+joshwilensky
+>>>>>>> 2e9ad66a15d8ed8ab28aa5ea4ef28fc6921964ff
