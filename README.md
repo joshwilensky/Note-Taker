@@ -20,9 +20,7 @@
 
 ### [Tests](#Tests)
 
-### [Questions](#Questions)
-
-### [Github](#Github)
+### [Github](#Contact)
 
 ---
 
@@ -74,19 +72,20 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-### <a name="Contributing"></a>Contributions
+### <a name="Contributing"></a>Contributions:
 
-Joshua Wilensky
+- Ben Wright
+- Justin Pinero
+- Benjamin Benson
 
-### <a name="Tests"></a>Tests
+### <a name="Tests"></a>Tests:
 
 - [x] npm init
 - [x] npm install
 
-### <a name="Questions"></a>Questions
+---
 
-joshwilensky@gmail.com
+### <a name="Github"></a>Contact the Author:
 
-### <a name="Github"></a>GitHub Account
-
-http://github.com/joshwilensky
+[E-mail](joshwilensky@gmail.com)
+[GitHub](http://github.com/joshwilensky)
