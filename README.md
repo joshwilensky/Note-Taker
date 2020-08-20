@@ -87,5 +87,5 @@ SOFTWARE.
 
 ### <a name="Github"></a>Contact the Author:
 
-[E-mail](joshwilensky@gmail.com)
-[GitHub](http://github.com/joshwilensky)
+- [E-mail](joshwilensky@gmail.com)
+- [GitHub](http://github.com/joshwilensky)
